@@ -38,7 +38,7 @@ namespace ExercicioDeFixacaoComVariasClasses.Entities
 
         public void removeContract(HourContract contract) { Contracts.Remove(contract); }
 
-        public double Income(int year, int month) {
+        public string Income(int year, int month) {
 
             double sum = BaseSalary;
 
@@ -48,7 +48,7 @@ namespace ExercicioDeFixacaoComVariasClasses.Entities
                     sum += contract.TotalValue();
                 }
             }
-            return sum;
+            return $"O total ganho nessa epoca é: {sum}" ;
         }
     }
 }

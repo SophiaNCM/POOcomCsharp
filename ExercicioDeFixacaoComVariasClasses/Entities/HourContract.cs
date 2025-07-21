@@ -17,7 +17,7 @@ namespace ExercicioDeFixacaoComVariasClasses.Entities
         public HourContract (DateTime date, double valuePerhour, int hours)
         {
             Date = date;
-            valuePerhour = ValuePerHour;
+            ValuePerHour = valuePerhour;
             Hours = hours;
         }
 
